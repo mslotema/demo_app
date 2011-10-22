@@ -1,4 +1,11 @@
 DemoApp::Application.routes.draw do
+  
+  resources :users
+  
+  resources :microposts
+  
+  root :to => "users#index" # match '/', :controller => 'user', :action => 'index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
